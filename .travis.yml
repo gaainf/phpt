@@ -1,0 +1,10 @@
+language: minimal
+
+jobs:
+  include:
+    - stage: build and test
+      script:
+      - docker build -t phpt .
+      - docker images
+      - docker run -it --rm -v $(pwd):/repo php bash -c 'cd /repo; run-tests.php tests/; cat tests/test5.diff; echo'
+      - rm -rf tests/*.{diff,sh,php,out,exp}
