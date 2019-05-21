@@ -3,7 +3,7 @@ Negative: Absent equals sign
 --FILE--
 <?php
 
-require 'rc/alidator.php';
+require 'src/validator.php';
 
 $NAMES = [
     "is_mobile",
