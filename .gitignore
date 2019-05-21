@@ -2,4 +2,8 @@
 *.log
 *.exp
 *.diff
-tests/*.sh
+tests/test*.sh
+tests/test*.php
+tests/test*.exp
+tests/test*.out
+tests/test*.diff
