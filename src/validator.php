@@ -12,7 +12,7 @@
  *
  * @return string Empty string if validation passed, invalid string otherwise
  */
-function validateValues($text, $name)
+function validateValues($text, $names)
 {
     $out = "";
     $lines = explode("\n", $text);
