@@ -6,13 +6,15 @@
 
 /**
  * Validate key=value pairs in multiline text
- * @param string $text Input text
- * @param array $names array of reverved key names
+ * 
+ * @param string $text  Input text
+ * @param array  $names An array of reserved key names
  *
  * @return string Empty string if validation passed, invalid string otherwise
  */
-function validateVlaues($text, $names)
+function validateValues($text, $names)
 {
+    $out = "";
     $lines = explode("\n", $text);
     $regexnames = implode("|", $names);
     foreach ($lines as $line) {

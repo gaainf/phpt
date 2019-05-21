@@ -1,9 +1,7 @@
 .vscode/
-*.log
-*.exp
-*.diff
 tests/test*.sh
 tests/test*.php
 tests/test*.exp
 tests/test*.out
 tests/test*.diff
+tests/test*.log

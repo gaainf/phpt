@@ -3,7 +3,7 @@ Empty text
 --FILE--
 <?php
 
-require 'validator.php';
+require 'src/validator.php';
 
 $NAMES = [
     "is_mobile",
@@ -13,6 +13,6 @@ $NAMES = [
     "height",
     "content_type"
 ];
-print(validateCreativeVlaues("", $NAMES));
+print(validateValues("", $NAMES));
 --EXPECTF--
 
