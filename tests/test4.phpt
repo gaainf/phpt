@@ -3,7 +3,7 @@ Negative: Absent linebreaker
 --FILE--
 <?php
 
-require 'validator.php';
+require 'src/validator.php';
 
 $NAMES = [
     "is_mobile",
