@@ -23,7 +23,7 @@ function validateValues($text, $names)
             return $line;
         }
         
-        // dangerous, because excludes repetition of ke=value pairs in single string
+        // dangerous, because excludes repetition of key=value pairs in single string
         $result2 = preg_match("/(($regexnames)=.+?){2,}/", $line, $out2);
         if ($out2 != array()) {
             return $line;
