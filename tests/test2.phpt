@@ -13,6 +13,6 @@ $NAMES = [
     "height",
     "content_type"
 ];
-print(validateCreativeVlaues("", $NAMES));
+print(validateValues("", $NAMES));
 --EXPECTF--
 
